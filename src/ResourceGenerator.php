@@ -2,6 +2,7 @@
 
 namespace Cloudstudio\ResourceGenerator;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
@@ -26,5 +27,8 @@ class ResourceGenerator extends Tool
     public function renderNavigation()
     {
         return view('resource-generator::navigation');
+    }
+    public function menu(Request $request){
+
     }
 }
